@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>forms</title>
+    <style>
+      body {
+        background-color: #f0ebf8;
+      }
+      #title {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 10px;
+      }
+
+      #main {
+        margin: 0 auto;
+        width: 70%;
+      }
+
+      .contents {
+        position: relative;
+        height: 100%;
+        width: auto;
+        bottom: 1%;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        border: 1px solid hsl(0 0% 83%);
+        box-shadow: 0 1rem 2rem hsl(0 0% 0% / 5%);
+        font-size: 18px;
+        font-family: "docs-Roboto", Helvetica, Arial, sans-serif;
+      }
+
+      .text {
+        margin: 2% 2%;
+        position: relative;
+        margin: 25px;
+      }
+      #submit {
+        background-color: #673ab7;
+        color: white;
+        margin: 15px;
+        border-radius: 5px;
+        padding: 0 24px;
+        font-size: 17px;
+        height: 2em;
+        cursor: pointer;
+        border: 0;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="content">
+        <div id="title">
+          <h1>フォーム改</h1>
+        </div>
+
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSczZb0imZNNR-xfo6Pz1U7Y7BqQY6wyDwo91V5UU_kFgGpYdg/formResponse">
+          <div class="contents">
+            <div class="text">
+              <p>おなまえ</p>
+              <input type="text" id="name" name="entry.1986813642" />
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>代表者の学年</p>
+              <div class="boxes">
+                <input type="radio" id="box-1" name="entry.302124779" />
+                <label for="box-1">1</label>
+
+                <input type="radio" id="box-2" name="entry.302124779" />
+                <label for="box-2">2</label>
+
+                <input type="radio" id="box-3" name="entry.302124779" />
+                <label for="box-3">3</label>
+
+                <input type="radio" id="box-4" name="entry.302124779" />
+                <label for="box-4">4</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>日時を選択してください</p>
+              <input
+                type="date"
+                name="date"
+                min="2023-02-09"
+                max="2025-02-09"
+                required
+                name="entry.816723040"
+              />
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>開始時間を選択してください</p>
+              <select name="startHour" 　required name="entry.1931558816">
+                <option value="">時</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+              ：
+              <select name="startMin" 　required name="entry.1931558816">
+                <option value="">分</option>
+                <option value="00">00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>終了時間を選択してください</p>
+              <select name="endTime" 　required name="entry.1845779757">
+                <option value="">時</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+              </select>
+              ：
+              <select name="endMin" 　required name="entry.1845779757">
+                <option value="">分</option>
+                <option value="00">00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+              </select>
+
+              <p>利用時間</p>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>人数</p>
+              <label id="NumOfPeople">
+                <input
+                  type="radio"
+                  name="num"
+                  value="apple"
+                  name="entry.1897830754"
+                />１
+                <input
+                  type="radio"
+                  name="num"
+                  value="apple"
+                  name="entry.1897830754"
+                />
+                ２
+                <input
+                  type="radio"
+                  name="num"
+                  value="apple"
+                  name="entry.1897830754"
+                />
+                ３
+              </label>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>利用形態</p>
+              <label>
+                <input
+                  type="radio"
+                  name="how"
+                  value="apple"
+                  name="entry.1011573843"
+                />a
+                <input
+                  type="radio"
+                  name="how"
+                  value="apple"
+                  name="entry.1011573843"
+                />
+                b
+              </label>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>他の人との練習</p>
+              <label>
+                <input
+                  type="radio"
+                  name="with"
+                  value="apple"
+                  name="entry.437954680"
+                />おけ
+                <input
+                  type="radio"
+                  name="with"
+                  value="apple"
+                  name="entry.437954680"
+                />やだ
+              </label>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="text">
+              <p>備考</p>
+              <input type="text" name="entry.240908693" />
+              <p>※キャンセルは予約確認画面から行ってください</p>
+            </div>
+          </div>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
